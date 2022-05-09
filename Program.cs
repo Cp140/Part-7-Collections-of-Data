@@ -16,7 +16,7 @@ namespace Part_7__Collections_of_Data
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frm());
         }
     }
 }
