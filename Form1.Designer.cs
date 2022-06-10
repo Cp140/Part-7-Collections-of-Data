@@ -43,7 +43,7 @@
             this.lblHerosText = new System.Windows.Forms.Label();
             this.lblNumbersText = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtHerosRemove = new System.Windows.Forms.TextBox();
             this.lblHeroestext = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
@@ -108,8 +108,9 @@
             this.btnHerosSort.Name = "btnHerosSort";
             this.btnHerosSort.Size = new System.Drawing.Size(88, 29);
             this.btnHerosSort.TabIndex = 5;
-            this.btnHerosSort.Text = "sort";
+            this.btnHerosSort.Text = "Sort";
             this.btnHerosSort.UseVisualStyleBackColor = true;
+            this.btnHerosSort.Click += new System.EventHandler(this.btnHerosSort_Click);
             // 
             // btnNumbersRemove
             // 
@@ -142,6 +143,7 @@
             this.btnHerosAdd.TabIndex = 9;
             this.btnHerosAdd.Text = "Add";
             this.btnHerosAdd.UseVisualStyleBackColor = true;
+            this.btnHerosAdd.Click += new System.EventHandler(this.btnHerosAdd_Click);
             // 
             // btnHerosRemove
             // 
@@ -152,6 +154,7 @@
             this.btnHerosRemove.TabIndex = 8;
             this.btnHerosRemove.Text = "Remove";
             this.btnHerosRemove.UseVisualStyleBackColor = true;
+            this.btnHerosRemove.Click += new System.EventHandler(this.btnHerosRemove_Click);
             // 
             // lblNumbers
             // 
@@ -201,13 +204,13 @@
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 14;
             // 
-            // textBox2
+            // txtHerosRemove
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(275, 358);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 15;
+            this.txtHerosRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHerosRemove.Location = new System.Drawing.Point(275, 358);
+            this.txtHerosRemove.Name = "txtHerosRemove";
+            this.txtHerosRemove.Size = new System.Drawing.Size(100, 26);
+            this.txtHerosRemove.TabIndex = 15;
             // 
             // lblHeroestext
             // 
@@ -248,7 +251,7 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblHeroestext);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtHerosRemove);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblNumbersText);
             this.Controls.Add(this.lblHerosText);
@@ -265,7 +268,7 @@
             this.Controls.Add(this.lstNumbers);
             this.Controls.Add(this.lstHeros);
             this.Name = "frm";
-            this.Text = "Form1";
+            this.Text = "Collector EXTREAM";
             this.Load += new System.EventHandler(this.frm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -289,7 +292,7 @@
         private System.Windows.Forms.Label lblHerosText;
         private System.Windows.Forms.Label lblNumbersText;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtHerosRemove;
         private System.Windows.Forms.Label lblHeroestext;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnReset;
